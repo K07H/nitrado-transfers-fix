@@ -9,6 +9,7 @@ If you like this mod please consider donating: [https://www.paypal.com/paypalme/
 <strong>Author:</strong> OSubMarin
 
 
+
 # Configuration
 
 Add the following at the end of your `GameUserSettings.ini` file:
@@ -32,6 +33,14 @@ ReceivingItemsTimespan=8
 
 You can refer to the following picture if you want to understand how the timespan settings work. The picture shows what happens when a player spawns (after a map travel):
 ![Nitrado Transfers Fix timespan settings image](https://i.imgur.com/V8M5SRY.png)
+
+
+
+# Loading in Ark Survival Ascended DevKit
+
+To load the mod in Ark Survival Ascended DevKit, simply copy the folder `NitradoTransfersFix` inside folder `[...]\Epic Games\ARKDevkit\Projects\ShooterGame\Mods`.
+Then launch the DevKit, open the level of your choice (`TestMapArea` by default), and set `PrimalGameData_BP_NitradoTransfersFix` in the level's `Primal Game Data Override` setting (`World Settings` tab).
+
 
 
 # Info & Support
