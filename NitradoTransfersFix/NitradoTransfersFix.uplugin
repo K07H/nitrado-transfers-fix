@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1F118BCF41CC45C9BFAD8089E719DB1D",
+	"FriendlyName": "Nitrado Transfers Fix",
+	"Description": "Fixes inventory duplication bug upon transfers on Nitrado.&cf_ugcID=1349894",
+	"Category": "UGC",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "https://legacy.curseforge.com/ark-survival-ascended/mods/nitrado-transfers-fix",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"ExplicitlyLoaded": true
+}
