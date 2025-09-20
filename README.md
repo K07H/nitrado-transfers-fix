@@ -18,8 +18,8 @@ Add the following at the end of your `GameUserSettings.ini` file:
 [NitradoTransfersFix]
 EnableLogging=True
 FixTransfersDupes=True
-FirstItemReceivedTimespan=10
-ReceivingItemsTimespan=8
+FirstItemReceivedTimespan=60
+ReceivingItemsTimespan=60
 ```
 
 
