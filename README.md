@@ -3,16 +3,16 @@
 Nitrado Transfers Fix is a mod for Ark Survival Ascended.<br>
 This mod fixes the inventory duplication bug that can occur when travelling to another map on Nitrado servers.<br>
 A lot of people have been complaining about this bug (including myself), and since after 2 years the issue has not been fixed I decided to make the fix myself.<br>
-If you like this mod please consider donating: [https://www.paypal.com/paypalme/osubmarin](https://www.paypal.com/paypalme/osubmarin)<br>
 <br>
-<strong>Version:</strong> 9.0<br>
-<strong>Author:</strong> OSubMarin
+<strong>Author:</strong> OSubMarin<br>
+_If you like this mod please consider donating: [https://www.paypal.com/paypalme/osubmarin](https://www.paypal.com/paypalme/osubmarin)_<br>
 
 
 
 # Configuration
 
-Add the following at the end of your `GameUserSettings.ini` file:
+This mod is correctly configured by default and therefore does not require any changes to the GameUserSettings.ini file.<br>
+However, you can modify certain settings by adding the following lines to the end of your GameUserSettings.ini file:
 
 ```
 [NitradoTransfersFix]
@@ -33,7 +33,7 @@ ReceivingItemsTimespan=60
 - `FirstItemReceivedTimespan` is the amount of time in seconds the mod will wait for the first transfered item to be added to player's inventory. You should not modify this value. Default value is `60` seconds, minimum value is `5`, maximum value is `180`.
 - `ReceivingItemsTimespan` is the amount of time in seconds the mod will check for duplicates when an item gets added to player's inventory. You should not modify this value. Default value is `60` seconds, minimum value is `5`, maximum value is `180`.
 
-## About `FirstItemReceivedTimespan` and `ReceivingItemsTimespan`
+### About `FirstItemReceivedTimespan` and `ReceivingItemsTimespan`
 
 On a regular Nitrado server you should not modify the values of `FirstItemReceivedTimespan` and `ReceivingItemsTimespan`.<br>
 If some item duplication is still happening with this mod installed, it's probably because your Nitrado server is extremely slow at processing map travels, which is not normal.<br>
