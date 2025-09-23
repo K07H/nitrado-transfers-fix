@@ -5,7 +5,7 @@ This mod fixes the inventory duplication bug that can occur when travelling to a
 A lot of people have been complaining about this bug (including myself), and since after 2 years the issue has not been fixed I decided to make the fix myself.<br>
 If you like this mod please consider donating: [https://www.paypal.com/paypalme/osubmarin](https://www.paypal.com/paypalme/osubmarin)<br>
 <br>
-<strong>Version:</strong> 8.0<br>
+<strong>Version:</strong> 9.0<br>
 <strong>Author:</strong> OSubMarin
 
 
@@ -16,8 +16,9 @@ Add the following at the end of your `GameUserSettings.ini` file:
 
 ```
 [NitradoTransfersFix]
-EnableLogging=True
 FixTransfersDupes=True
+EnableLogging=False
+LogAllEvents=False
 FirstItemReceivedTimespan=60
 ReceivingItemsTimespan=60
 ```
@@ -26,19 +27,25 @@ ReceivingItemsTimespan=60
 
 # Explanations
 
-- `EnableLogging` can be set to `False` if you don't want the mod to add lines in the `ShooterGame.log` file.
-- `FixTransfersDupes` can be set to `False` if you want to turn OFF the mod.
-- `FirstItemReceivedTimespan` is the amount of time in seconds the mod will wait for the first transfered item to be added to player's inventory. This is set to `60` seconds by default to allow for some flexibility. Minimum value is `5`, maximum value is `120`.
-- `ReceivingItemsTimespan` is the amount of time in seconds the mod will check for duplicates when an item gets added to player's inventory. This is set to `60` seconds by default to allow for some flexibility. Minimum value is `5`, maximum value is `120`.
+- `FixTransfersDupes` can be set to `False` if you want to turn OFF the mod without uninstalling it.
+- `EnableLogging` can be set to `True` if you want the mod to add logging lines in the `ShooterGame.log` file. If set to `True`, only "player joined" and "amount of transfered items" events will be logged, but more things can be logged if you also set `LogAllEvents` to `True`.
+- `LogAllEvents` can be set to `True` if you want to add additional logging lines in the `ShooterGame.log` file. Has no effect if `EnableLogging` is not set to `True`. Setting this to `True` is not recommended unless for testing purposes. This will log all the operations made by the mod when a player receives a transfered item.
+- `FirstItemReceivedTimespan` is the amount of time in seconds the mod will wait for the first transfered item to be added to player's inventory. You should not modify this value. Default value is `60` seconds, minimum value is `5`, maximum value is `180`.
+- `ReceivingItemsTimespan` is the amount of time in seconds the mod will check for duplicates when an item gets added to player's inventory. You should not modify this value. Default value is `60` seconds, minimum value is `5`, maximum value is `180`.
 
-You can refer to the following picture if you want to understand how the timespan settings work. The picture shows what happens when a player spawns (after a map travel):
+## About `FirstItemReceivedTimespan` and `ReceivingItemsTimespan`
+
+On a regular Nitrado server you should not modify the values of `FirstItemReceivedTimespan` and `ReceivingItemsTimespan`.<br>
+If some item duplication is still happening with this mod installed, it's probably because your Nitrado server is extremely slow at processing map travels, which is not normal.<br>
+If your Nitrado server is extremely slow at processing map travels you can try to increase `FirstItemReceivedTimespan` and `ReceivingItemsTimespan` values.<br>
+You can refer to the following picture if you want to understand how these two settings work. The picture shows what happens when a player spawns (after a map travel):
 ![https://i.imgur.com/3iXl8C2.png](https://i.imgur.com/3iXl8C2.png)
 
 
 
 # Loading in Ark Survival Ascended DevKit
 
-To load the mod in Ark Survival Ascended DevKit, simply copy the folder `NitradoTransfersFix` inside folder `[...]\Epic Games\ARKDevkit\Projects\ShooterGame\Mods`.
+To load the mod in ARK Survival Ascended DevKit, simply copy the folder `NitradoTransfersFix` inside folder `[...]\Epic Games\ARKDevkit\Projects\ShooterGame\Mods`.
 Then launch the DevKit, open the level of your choice (`TestMapArea` by default), and set `PrimalGameData_BP_NitradoTransfersFix` in the level's `Primal Game Data Override` setting (`World Settings` tab).
 
 

@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "B68861D048E2906C1B33D3907FD8E6CB",
+	"VersionName": "568890544063DC2BF38904BCA9455D25",
 	"FriendlyName": "Nitrado Transfers Fix",
 	"Description": "Fixes inventory duplication bug upon transfers on Nitrado.&cf_ugcID=1349894",
 	"Category": "UGC",
