@@ -5,7 +5,7 @@ This mod fixes the inventory duplication bug that can occur when travelling to a
 A lot of people have been complaining about this bug (including myself), and since after 2 years the issue has not been fixed I decided to make the fix myself.<br>
 <br>
 <strong>Author:</strong> OSubMarin<br>
-_If you like this mod please consider donating: [https://www.paypal.com/paypalme/osubmarin](https://www.paypal.com/paypalme/osubmarin)_<br>
+_If you like this mod please consider donating: [https://paypal.me/osubmarin](https://paypal.me/osubmarin) _<br>
 
 
 
