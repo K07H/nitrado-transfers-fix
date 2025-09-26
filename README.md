@@ -4,7 +4,7 @@ Nitrado Transfers Fix is a mod for Ark Survival Ascended.<br>
 This mod fixes the inventory duplication bug that can occur when travelling to another map on Nitrado servers.<br>
 A lot of people have been complaining about this bug (including myself), and since after 2 years the issue has not been fixed I decided to make the fix myself.<br>
 <br>
-<strong>Author:</strong> OSubMarin<br>
+The mod package can be downloaded from CurseForge: [https://www.curseforge.com/ark-survival-ascended/mods/nitrado-transfers-fix](https://www.curseforge.com/ark-survival-ascended/mods/nitrado-transfers-fix) <br>
 _If you like this mod please consider donating: [https://paypal.me/osubmarin](https://paypal.me/osubmarin)_<br>
 
 
@@ -54,7 +54,6 @@ Then launch the DevKit, open the level of your choice (`TestMapArea` by default)
 
 Please use the comments section of this mod on CurseForge if you need information and/or support:<br>
 [https://www.curseforge.com/ark-survival-ascended/mods/nitrado-transfers-fix](https://www.curseforge.com/ark-survival-ascended/mods/nitrado-transfers-fix)<br>
-Or join my Discord server:<br>
-https://discord.gg/PtAbeUdWX8
+
 
 <br>
